@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-   <p>700 Health Sciences Dr</p>
+   <p>Health Sciences Drive</p>
     <p>Stony Brook, New York</p>
 
 news: true  # includes a list of news items
