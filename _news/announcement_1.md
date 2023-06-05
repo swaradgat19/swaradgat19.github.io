@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started work as a **Research Assistant** at the **Department of Biomedical Informatics** at Stony Brook University! :microscope:
+Started working as a **Research Assistant** at the **Department of Biomedical Informatics** at Stony Brook University! :microscope:
