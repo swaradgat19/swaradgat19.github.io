@@ -20,9 +20,9 @@ social: true  # includes social icons at the bottom of the page
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder. -->
 
-I'm pursuing a **Master of Science** in **Computer Science** at **SUNY Stony Brook, New York**. I'm currently studying **Data Visualization** and **Operating Systems**
+I'm pursuing a **Master of Science** in **Computer Science** at **SUNY Stony Brook, New York**. I'm currently studying **Data Visualization** , **Operating Systems** and **Computer Vision**!
 
-My interests include Full Stack Development, Data Science and Deep Learning. I have interned as a Django developer at multiple companies. Apart from
+My interests include Full Stack Development, Data Science and Deep Learning. I have served as the **Lead Django Intern** at [Talentserve](https://www.talentserve.org/). 
 
 <!-- Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically. -->
 

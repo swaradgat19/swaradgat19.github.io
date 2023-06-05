@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 2
+title: Unsupervised segmentation of surgical tools
 description: a project with a background image
-img: assets/img/3.jpg
+img: assets/img/surgical_skill_proj.png
 importance: 2
 category: work
 ---

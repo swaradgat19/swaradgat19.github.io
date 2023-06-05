@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 1
+title: Visual Analysis of Olympics data 
 description: a project with a background image
-img: assets/img/12.jpg
+img: assets/img/viz_project.png
 importance: 1
 category: work
 ---
