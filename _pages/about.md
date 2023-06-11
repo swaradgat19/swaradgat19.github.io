@@ -20,6 +20,8 @@ social: true  # includes social icons at the bottom of the page
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder. -->
 
+
+
 I'm pursuing a **Master of Science** in **Computer Science** at **SUNY Stony Brook, New York**. I'm currently studying **Data Visualization** , **Operating Systems** and **Computer Vision**!
 
 My interests include Full Stack Development, Data Science and Deep Learning. I have served as the **Lead Django Intern** at [Talentserve](https://www.talentserve.org/). 
