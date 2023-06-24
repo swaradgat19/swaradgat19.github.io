@@ -4,7 +4,7 @@ title: Visual Analysis of Olympics data
 description: Interactive dashboard to visually analyze athlete and country performance in Olympics
 img: assets/img/viz_project.png
 importance: 1
-category: work
+category: viz
 ---
 
 Using Olympics data of over 120 years, ranging from the 1896 Athens Games to the 2016 Rio Games, I have designed 5 dynamic graphs on a dashboard. 

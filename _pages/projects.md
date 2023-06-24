@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: These are some of the projects I've worked on, ranging from Data Analytics, Medical Imaging to Full Stack Development
 nav: true
 nav_order: 1
-display_categories: [work, fun]
+display_categories: [viz, fun]
 horizontal: false
 ---
 

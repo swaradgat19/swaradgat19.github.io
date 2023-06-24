@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Unsupervised segmentation of surgical tools
-description: a project with a background image
+# description: a project with a background image
 img: assets/img/surgical_skill_proj.png
 importance: 2
-category: work
+category: viz
 ---
 
 Every project has a beautiful feature showcase page.

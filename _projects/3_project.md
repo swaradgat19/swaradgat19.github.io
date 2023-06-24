@@ -5,7 +5,7 @@ description:
 img: assets/img/lab2a.png
 # redirect: https://unsplash.com
 importance: 3
-category: work
+category: viz
 ---
 
 Every project has a beautiful feature showcase page.
