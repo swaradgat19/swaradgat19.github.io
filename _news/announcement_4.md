@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started pursuing **Master of Science in Computer Science** at Stony Brook University! ✅
+Started pursuing a **Master of Science in Computer Science** at Stony Brook University! ✅

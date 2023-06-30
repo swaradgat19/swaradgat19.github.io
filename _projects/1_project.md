@@ -3,6 +3,8 @@ layout: page
 title: Visual Analysis of Olympics data 
 description: Interactive dashboard to visually analyze athlete and country performance in Olympics
 img: assets/img/viz_project.png
+github: https://github.com/kapil40/Olympics-Dashboard
+report: /assets/pdf/272.pdf
 importance: 1
 category: viz
 ---
