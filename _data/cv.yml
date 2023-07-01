@@ -36,12 +36,12 @@
       institution: The Research Foundation for SUNY
       year: 2023 - Present
       description:
-        - Assisted in solving python dependency issues
-        - Helped package wsinfer pipeline as executable software
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
+        - I assist in the development of Wsinfer, a pipeline to run patch-based classification models on whole slide images for tumor and lymphocyte detection.
+        # - Helped package wsinfer pipeline as executable software
+        # - title: Description 3.
+        #   contents:
+        #     - Sub-description 1.
+        #     - Sub-description 2.
     - title: Software Developer Intern
       institution: Talentserve
       year: 2021
