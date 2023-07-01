@@ -32,12 +32,12 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Research Assistant Intern
+    - title: Senior Research Aide
       institution: The Research Foundation for SUNY
       year: 2023 - Present
       description:
-        - Description 1.
-        - Description 2.
+        - Assisted in solving python dependency issues
+        - Helped package wsinfer pipeline as executable software
         - title: Description 3.
           contents:
             - Sub-description 1.

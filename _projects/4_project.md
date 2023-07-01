@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
+title: Analysis of Breast Cancer data using MDS and PCP
+description: Analysing breast cancer data using Multi dimensional Scaling and Parallel Co-ordinates Plot
+img: assets/img/lab2b.png
+github: https://github.com/swaradgat19/BreastCancerDataVisualization-2
 importance: 3
-category: fun
+category: Data Visualization and Analytics
 ---
 
 Every project has a beautiful feature showcase page.

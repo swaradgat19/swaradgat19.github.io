@@ -1,11 +1,13 @@
 ---
 layout: page
-title: Analysis of Breast Cancer Dataset using Principal Component Analysis
-description: 
+title: Analysis of Breast Cancer Dataset using PCA
+description: Analyzing breast cancer data using Principal Component Analysis and Scatterplot Matrix
 img: assets/img/lab2a.png
 # redirect: https://unsplash.com
+github: https://github.com/swaradgat19/BreastCancerDataVisualization
+# video: https://drive.google.com/file/d/1iQg7aaVO96ZIz4WbyTl3UZDxWT0A84Le/view?usp=drive_link
 importance: 3
-category: viz
+category: Data Visualization and Analytics
 ---
 
 Every project has a beautiful feature showcase page.

@@ -6,7 +6,7 @@ img: assets/img/viz_project.png
 github: https://github.com/kapil40/Olympics-Dashboard
 report: /assets/pdf/272.pdf
 importance: 1
-category: viz
+category: Data Visualization and Analytics
 ---
 
 Using Olympics data of over 120 years, ranging from the 1896 Athens Games to the 2016 Rio Games, I have designed 5 dynamic graphs on a dashboard. 
