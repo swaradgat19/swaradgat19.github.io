@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
+title: ASAN vs Valgrind 
+description: By comparing ASan and Valgrind, we aim to evaluate their practicality ,providing insights for developers to make informed decisions about the suitable security mechanism for their work.
+img: assets/img/OS_Project.png
 importance: 4
-category: fun
+category: Operating Systems
 ---
 
 Every project has a beautiful feature showcase page.
