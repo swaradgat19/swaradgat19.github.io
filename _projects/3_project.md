@@ -10,74 +10,51 @@ importance: 3
 category: Data Visualization and Analytics
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+The [dataset](https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset) contains numerical data regarding breast cancer. It contains 31 attributes, which describe the various properties of the tumour. The label of this dataset is **‘diagnosis’**, which has two labels. The tumour is either **malignant** or **benign**. Malignant indicates that it is cancerous and benign meaning that it is non-cancerous. There are 31 attributes which describe the tumour, including ‘radius_mean’, ‘texture_mean’, ‘area_mean’, etc.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+I have performed **Principal Component Analysis** on this dataset and visualised the results using the following visualization techniques: 
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
+1. Scree Plot
+2. Biplot
+3. Scatterplot
+<br>
+<br>
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<ul>
+    <div class="desc1">
+        <li><p>
+        The scree plot shows the principal component on the X-axis and the corresponding "explained variance ratio (%) on the Y-axis. An <strong>interactivity element</strong> has been added on the scree plot. If a red dot is clicked <strong>(intrinsic dimensionality index(di) )</strong>, a table is generated showcasing the explained variance ratios of all principal components till the selected value. We also see the <strong>top 4 attributes</strong> of each principal component. 
+        </p></li>
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm- mt-4 mt-md-0">
+        {% include figure.html path="assets/img/scree.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <br>
+    <br>
+    <div class="desc2">
+    <li><p>
+        This is the biplot. The top 10 attributes are represented as lines on the PCA scatterplot. The dots on the scatterplot represent data points. The closer two axes are to each other, the more correlated they are. We get a good understanding of the correlation of attributes from the Biplot. 
+    </p></li>
     </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm- mt-4 mt-md-0">
+        {% include figure.html path="assets/img/biplot.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+        <!-- <div class="caption2">
+        <p>Biplot</p>
+    </div> -->
+    <br>
+    <br>
+    <div class="desc3">
+        <li><p>
+            On selecting the <strong>intrinsic dimensionality index(di)</strong> in each , we get the top 4 attributes for that principal component. The four attributes are taken and a dynamic scatterplot is plotted. The four attributes are on the diagonal. The two labels are “Malignant” and “Benign”. It is color coded accordingly.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        </p></li>
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm- mt-4 mt-md-0">
+        {% include figure.html path="assets/img/scatterplot.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
+        <!-- <div class="caption3">
+        <p>Scatterplot Matrix</p>
+    </div> -->
+    </ul>
 </div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
