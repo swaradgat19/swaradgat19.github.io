@@ -19,8 +19,10 @@
         # - Description 2.
         - title: Courses Taken
           contents:
-            - Semester 1 - Machine Learning, Computer Vision
-            - Semester 2 - Data Visualization, Operating Systems
+            - Fall '22 - Machine Learning, Computer Vision
+            - Spring '23 - Data Visualization, Operating Systems
+            - Fall '23 - Data Science Fundamentals, Analysis of Algorithms
+
             - Advanced Project under Prof. Yifan Sun
     - title: Bachelor of Technology
       institution: Maharashtra Institute of Technology - WPU
@@ -60,17 +62,24 @@
       items: 
         - Top 5 Projects in Operating Systems (CSE 506 Spring'23)
 
-- title: Academic Interests
+- title: Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Programming Languages
       items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Python, Java, Javascript, C, C++
+        # - Description 2.
+    - title: Frameworks and Libraries
       items:
-        - Description 1.
-        - Description 2.
+        - Django, Flask, React, Plotly, Dash, d3.js, Tensorflow, Pytorch, Sklearn
+        # - Description 2.
+    - title: Databases
+      items: 
+      - MySQL, SQLite, PostgreSQL, Firebase
+    - title: Tools
+      items: 
+       - Git, Github, Docker
+
 
 - title: Other Interests
   type: list

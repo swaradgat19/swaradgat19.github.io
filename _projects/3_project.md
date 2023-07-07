@@ -39,9 +39,6 @@ I have performed **Principal Component Analysis** on this dataset and visualised
     <div class="col-sm- mt-4 mt-md-0">
         {% include figure.html path="assets/img/biplot.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-        <!-- <div class="caption2">
-        <p>Biplot</p>
-    </div> -->
     <br>
     <br>
     <div class="desc3">

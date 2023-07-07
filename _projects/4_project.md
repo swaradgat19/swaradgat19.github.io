@@ -8,18 +8,11 @@ importance: 3
 category: Data Visualization and Analytics
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+I have a [dataset](https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset) with 31 attributes. I've performed Multi Dimensional Scaling using sklearn (n_components = 2). I’ve visualised the results using D3.js and I've used Flask for the backend. The axes represent the 2 components. The colors represent the clusters. I have performed K-Means on the N-Dimensional space and visualised the clusters here.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+<!-- This represents the MDS Variables’ plot. Each point on the scatterplot represents a numerical attribute. I have used $$1-corr$$ as the distance matrix instead of the eucledian distance. I have added an interaction element on each scatterplot circle. On clicking 5 different attributes on the scatterplot, a PCP is generated besides it. -->
+
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
