@@ -1,11 +1,14 @@
 ---
 layout: page
 title: ASAN vs Valgrind 
-description: By comparing ASan and Valgrind, we aim to evaluate their practicality ,providing insights for developers to make informed decisions about suitable security mechanisms for their work.
+description: By comparing ASan and Valgrind, we aim to evaluate their practicality ,providing insights for developers to make informed decisions about suitable security mechanisms for their work. 
 img: assets/img/OS_Project.png
 importance: 4
 category: Operating Systems
 ---
+```
+                    🏆 Top 5 Projects of CSE 506 Operating Systems, Spring '23🏆
+```
 
 - **Problem Statement**
 
@@ -65,7 +68,7 @@ category: Operating Systems
 - **Results**
 
     <div class="results">
-        <img src="/assets/img/result_OS.png" width="550" height="300">
+        <img class="result_img" src="/assets/img/result_OS.png" width="550" height="300">
     </div>
 
 Table summarizes the performance metrics w.r.t. Execution time for each memory sanitizer across the Parsec benchmarks.
