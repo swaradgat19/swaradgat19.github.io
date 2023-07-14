@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ASAN vs Valgrind | Swarad Ganesh  Gat</title>
     <meta name="author" content="Swarad Ganesh  Gat">
-    <meta name="description" content="By comparing ASan and Valgrind, we aim to evaluate their practicality ,providing insights for developers to make informed decisions about the suitable security mechanism for their work.">
+    <meta name="description" content="By comparing ASan and Valgrind, we aim to evaluate their practicality ,providing insights for developers to make informed decisions about suitable security mechanisms for their work.">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -128,168 +128,135 @@
 
           <header class="post-header">
             <h1 class="post-title">ASAN vs Valgrind</h1>
-            <p class="post-description">By comparing ASan and Valgrind, we aim to evaluate their practicality ,providing insights for developers to make informed decisions about the suitable security mechanism for their work.</p>
+            <p class="post-description">By comparing ASan and Valgrind, we aim to evaluate their practicality ,providing insights for developers to make informed decisions about suitable security mechanisms for their work.</p>
           </header>
 
           <article>
-            <p>Every project has a beautiful feature showcase page.
-It’s easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.</p>
+            <ul>
+  <li>
+    <p><strong>Problem Statement</strong></p>
 
-<p>To give your project a background in the portfolio page, just add the img tag to the front matter like so:</p>
+    <p>The problem we aim to address in this project is the <strong>prevalent occurrence of memory bugs in operating systems</strong> and the need for effective security mechanisms to mitigate them. These bugs can be exploited by attackers to gain unauthorized access, execute arbitrary code or cause system crashes, leading to service disruptions and potential data breaches.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
-layout: page
-title: project
-description: a project with a background image
-img: /assets/img/12.jpg
----
-</code></pre></div></div>
+    <p>Traditional approaches to ensuring memory safety, such as static analysis and manual code reviews, have limitations in detecting and preventing memory bugs, particularly in large and complex operating system projects. By addressing memory bugs effectively, we can minimize the risks associated with software vulnerabilities and bolster the overall security posture of operating systems.</p>
+  </li>
+</ul>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
+<!-- 
+     ---
+    layout: page
+    title: project
+    description: a project with a background image
+    img: /assets/img/12.jpg
+    --- -->
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/1-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/1-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/1-1400.webp"></source>
-    
+<ul>
+  <li>
+    <p><strong>Objective</strong></p>
 
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/1.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <p>The objective of this project is to propose and implement a compelling solution that leverages existing security mechanisms to enhance memory safety in an operating system context. <a href="https://github.com/google/sanitizers/wiki/AddressSanitizer" rel="external nofollow noopener" target="_blank">AddressSanitizer (ASan)</a> and <a href="https://valgrind.org/" rel="external nofollow noopener" target="_blank">Valgrind</a> are two prominent security mechanisms that aim to enhance memory safety in operating systems.</p>
 
-  </picture>
+    <p>By comparing ASan and Valgrind, we aim to evaluate their practicality, benefits and limitations, providing insights for developers and system administrators to make informed decisions about the most suitable security mechanism for their projects.</p>
+  </li>
+  <li>
+    <p><strong>Our specific goals include:</strong></p>
 
-</figure>
+    <ol>
+      <li>
+        <p><strong>Evaluate Performance</strong>: Measure and compare the performance overhead of ASan and Valgrind when integrated into an operating system project.</p>
+      </li>
+      <li>
+        <p><strong>Assess Effectiveness</strong>: Determine the effectiveness of ASan and Valgrind in detecting and mitigating memory bugs commonly found in operating systems.</p>
+      </li>
+      <li>
+        <p><strong>Explore Limitations</strong>: Identify and understand the limitations and challenges associated with ASan and Valgrind in an operating system context.</p>
+      </li>
+      <li>
+        <p><strong>Practicality and Benefits</strong>: Assess the practicality and benefits of integrating ASan and Valgrind into an operating system project.</p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p><strong>Tools</strong></p>
 
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
+    <ol>
+      <li>
+        <p><strong>ASan (AddressSanitizer)</strong></p>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/3-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/3-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/3-1400.webp"></source>
-    
+        <p>ASan (AddressSanitizer) is a runtime tool developed by Google that detects <strong>memory bugs</strong>, such as <strong>buffer overflows</strong> and <strong>use-after-free errors</strong>, in an operating system project. It operates by instrumenting the application’s code during runtime, adding checks and metadata to each memory access. During the instrumentation process, ASan replaces the memory allocation and deallocation functions, such as malloc() and free(), with its own versions.</p>
+      </li>
+      <li>
+        <p><strong>Valgrind</strong></p>
 
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/3.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+        <p>Valgrind is a powerful open-source framework for debugging and profiling applications. It provides a suite of tools that help identify memory leaks, detect memory errors, profile performance, and analyze threading issues in programs. Valgrind operates by dynamically instrumenting the executable and running it in a virtual environment, allowing detailed analysis of memory operations and program behavior. Its ease of use and extensive capabilities make Valgrind a popular choice for developers and software testers seeking to improve the reliability and performance of their applications.</p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p><strong>Experimental Setup</strong></p>
 
-  </picture>
+    <p>Benchmark Selection - <a href="https://parsec.cs.princeton.edu/overview.htm" rel="external nofollow noopener" target="_blank">Parsec</a>
+  The experimental setup involved conducting benchmark tests using the Parsec benchmark suite to compare the performance and effectiveness of ASan and Valgrind. <strong>Six out of 10 benchmarks were executed on a Linux operating system.</strong>
+  To evaluate ASan and Valgrind, they were compiled and instrumented separately. The Parsec benchmark suites were then executed and relevant metrics such as execution time and memory usage were measured.</p>
 
-</figure>
+    <p>Following benchmarks were used in evaluation:</p>
+    <ul>
+      <li>Blackscholes</li>
+      <li>Vips</li>
+      <li>Fluidanimate</li>
+      <li>Streamcluster</li>
+      <li>Raytrace</li>
+      <li>Canneal</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Results</strong></p>
 
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
+    <div class="results">
+      <img src="/assets/img/result_OS.png" width="550" height="300">
+  </div>
+  </li>
+</ul>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/5-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/5-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/5-1400.webp"></source>
-    
+<p>Table summarizes the performance metrics w.r.t. Execution time for each memory sanitizer across the Parsec benchmarks.</p>
 
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/5.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+<ul>
+  <li>
+    <p><strong>Bugs</strong></p>
 
-  </picture>
+    <p><strong>These are the some of the common bugs we are trying to detech using ASan and Valgrind:</strong></p>
 
-</figure>
+    <ul>
+      <li>Out-of-bound stack access</li>
+      <li>Memory leaks</li>
+      <li>Buffer overflows</li>
+      <li>Use-after-free errors</li>
+      <li>Uninitialized memory use</li>
+      <li>Detecting data races</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Analysis</strong></p>
 
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/5-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/5-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/5-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/5.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-<p>You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, <em>bled</em> for your project, and then… you reveal its glory in the next row of images.</p>
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/6-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/6-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/6-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/6.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/11-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/11-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/11-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/11.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-<p>The code is simple.
-Just wrap your images with <code class="language-plaintext highlighter-rouge">&lt;div class="col-sm"&gt;</code> and place them inside <code class="language-plaintext highlighter-rouge">&lt;div class="row"&gt;</code> (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" rel="external nofollow noopener" target="_blank">Bootstrap Grid</a> system).
-To make images responsive, add <code class="language-plaintext highlighter-rouge">img-fluid</code> class to each; for rounded corners and shadows use <code class="language-plaintext highlighter-rouge">rounded</code> and <code class="language-plaintext highlighter-rouge">z-depth-1</code> classes.
-Here’s the code for the last row of images above:</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-content-sm-center"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-8 mt-3 mt-md-0"</span><span class="nt">&gt;</span>
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-4 mt-3 mt-md-0"</span><span class="nt">&gt;</span>
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div></div>
-
+    <ul>
+      <li>
+        <p>In the case of the Vips and fluidanimate benchmarks, there is a increase of 121.3% and 208.4% in execution times when using ASan compared to the baseline. This can be attributed to several factors that contribute to the additional time taken by ASan during the memory sanitization process. Since ASan’s instrumentation process adds additional instructions and checks to each memory access, an extra computational overhead is introduced. As a result, the Vips and fluidanimate, which involve a large number of memory accesses, experience increased execution time due to the added ASan instrumentation.</p>
+      </li>
+      <li>
+        <p>When evaluated against Raytrace benchmark, ASan results in the highest time increase, with a staggering 940.6%. It should be noted that Raytrace involves a significant number of floating-point operations and these operations could be time-consuming. ASan’s additional checks for each memory access, including those involving floating-point calculations, added to the computational overhead and further increased the execution time.</p>
+      </li>
+      <li>
+        <p>The performance impact of AddressSanitizer (ASan) on the BlackScholes, Streamcluster and canneal benchmark when compared to other benchmarks is comparatively low. BlackScholes, Stream-cluster and canneal exhibit memory access patterns that align well with ASan’s instrumentation and detection mechanisms, resulting in a smaller performance impact.</p>
+      </li>
+      <li>
+        <p>Different benchmarks may have distinct levels of optimization applied, and specific optimizations can help alleviate the performance impact of ASan. The Streamcluster benchmark is more compliant to certain optimizations that mitigate the impact of ASan compared to other benchmarks.</p>
+      </li>
+      <li>
+        <p>ASan and Valgrind are dynamic analysis tools for detecting memory-based errors but have subtle differences in their working. ASan is a specific tool which detects memory errors like buffer overflows, uninitialized reads, etc by adding extra instrumentation to the code. On the other hand, Valgrind is a tool used for various types of analyses including memcheck (detects memory-management related errors primarily in C and C++ programs), Cachegrind (cache profiler), Helgrind (detects data races in multithreaded programs), Massif ( heap profiler), etc. Therefore, ASan is a more specific tool while Valgrind has a variety of debugging and profiling tools. Valgrind has a significantly higher overhead than ASan because of this general purpose nature. Therefore, it slows down the execution by a factor of 5-10. ASan is relatively lighter. Valgrind emulates a virtual machine that executes the program, while ASan inserts runtime checks into the already compiled code. This makes Valgrind more efficient at detecting a range of errors which ASan cannot detect.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
 
           </article>
 
