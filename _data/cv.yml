@@ -62,6 +62,10 @@
     - year: 2023
       items: 
         - Top 5 Projects in Operating Systems (CSE 506 Spring'23)
+    - year: 2022
+      items: 
+        - Participated in All India Inter University Baseball Tournament in 2022
+        - Gold Medalist of Summit Baseball '22
 
 - title: Skills
   type: nested_list
