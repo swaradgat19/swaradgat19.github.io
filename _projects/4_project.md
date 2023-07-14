@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Analysis of Breast Cancer data using MDS and PCP
+title: Analysis of Breast Cancer data - 2
 description: Analysing breast cancer data using Multi dimensional Scaling and Parallel Co-ordinates Plot
 img: assets/img/lab2b.png
 github: https://github.com/swaradgat19/BreastCancerDataVisualization-2

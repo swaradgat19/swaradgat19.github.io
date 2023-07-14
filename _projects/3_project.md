@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Analysis of Breast Cancer Dataset using PCA
+title: Analysis of Breast Cancer Dataset - 1
 description: Analyzing breast cancer data using Principal Component Analysis and Scatterplot Matrix
 img: assets/img/lab2a.png
 # redirect: https://unsplash.com

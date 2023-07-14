@@ -5,7 +5,7 @@ permalink: /projects/
 description: These are some of the projects I've worked on, ranging from Data Analytics, Medical Imaging to Full Stack Development
 nav: true
 nav_order: 1
-display_categories: [Data Visualization and Analytics]
+display_categories: [Data Visualization and Analytics, Operating Systems, Computer Vision]
 horizontal: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Visual Analysis of Olympics data 
-description: Interactive dashboard to visually analyze athlete and country performance in Olympics
+title: MedalMosaic
+description: A Data Exploration Tool Unveiling 120 Years of Olympic Data
 img: assets/img/viz_project.png
 github: https://github.com/kapil40/Olympics-Dashboard
 report: /assets/pdf/272.pdf
