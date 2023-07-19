@@ -8,7 +8,7 @@ importance: 2
 category: Computer Vision
 ---
 
-<!-- 
+
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.
@@ -79,4 +79,10 @@ Here's the code for the last row of images above:
     </div>
 </div>
 ```
-{% endraw %} -->
+{% endraw %}
+
+
+<p>Video to the demonstration of my project!</p>
+<div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/b1FA8hDfZhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>

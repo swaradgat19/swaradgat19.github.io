@@ -7,7 +7,7 @@ img: assets/img/lab2a.png
 github: https://github.com/swaradgat19/BreastCancerDataVisualization
 # video: https://drive.google.com/file/d/1iQg7aaVO96ZIz4WbyTl3UZDxWT0A84Le/view?usp=drive_link
 importance: 3
-category: Data Visualization and Analytics
+category: Data Science
 ---
 
 The [dataset](https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset) contains numerical data regarding breast cancer. It contains 31 attributes, which describe the various properties of the tumour. The label of this dataset is **‘diagnosis’**, which has two labels. The tumour is either **malignant** or **benign**. Malignant indicates that it is cancerous and benign meaning that it is non-cancerous. There are 31 attributes which describe the tumour, including ‘radius_mean’, ‘texture_mean’, ‘area_mean’, etc.

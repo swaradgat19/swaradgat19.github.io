@@ -6,7 +6,7 @@ img: assets/img/viz_project.png
 github: https://github.com/kapil40/Olympics-Dashboard
 report: /assets/pdf/272.pdf
 importance: 1
-category: Data Visualization and Analytics
+category: Data Science
 ---
 
 Using Olympics data of over 120 years, ranging from the 1896 Athens Games to the 2016 Rio Games, I have designed 5 dynamic graphs on a dashboard. 
@@ -80,9 +80,8 @@ Interactivity elements in the dashboard are included in the PCA scatterplot and 
 <br><br>
 <p>Video to the demonstration of my dashboard!</p>
 </div>
-<div>
-    <iframe width="700" height="345" src="https://www.youtube.com/embed/watch?v=puMQc-RNkVA">
-</iframe>
+<div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/puMQc-RNkVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 

@@ -5,70 +5,46 @@ description: Analysing breast cancer data using Multi dimensional Scaling and Pa
 img: assets/img/lab2b.png
 github: https://github.com/swaradgat19/BreastCancerDataVisualization-2
 importance: 3
-category: Data Visualization and Analytics
+category: Data Science
 ---
 
 
-I have a [dataset](https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset) with 31 attributes. I've performed Multi Dimensional Scaling using sklearn (n_components = 2). I’ve visualised the results using D3.js and I've used Flask for the backend. The axes represent the 2 components. The colors represent the clusters. I have performed K-Means on the N-Dimensional space and visualised the clusters here.
+I have a [dataset](https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset) with 31 attributes. I've performed **Multi Dimensional Scaling (MDS)**. I’ve visualised the results using **D3.js** and used **Flask** for the backend. The axes represent the 2 components. The colors represent the clusters. I have performed **K-Means** on the N-Dimensional space and visualised the clusters here. 
 
 <!-- This represents the MDS Variables’ plot. Each point on the scatterplot represents a numerical attribute. I have used $$1-corr$$ as the distance matrix instead of the eucledian distance. I have added an interaction element on each scatterplot circle. On clicking 5 different attributes on the scatterplot, a PCP is generated besides it. -->
 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/MDS.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/MDS_var.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+The results of the MultiDimensional Scaling are visualized here. Dimentionality reduction is performed and 31 attributes are represented on a 2D scatterplot. The <strong>first image</strong> shows MDS performed on all <strong>data points</strong>. The <strong>second figure</strong> shows a <strong>custom MDS</strong> performed on all the 31 features. The closer two features are, the more correlated they are. 
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/MDS_PCP.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
+A dynamic MDS graph is shown here. On selecting 5 features from the plot, a <strong>Parallel Co-ordinates Plot</strong> is rendered on the right. The PCP gives insighful information about <strong>feature correlation</strong>
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/PCP.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<!-- <div class="caption">
     This image can also have a caption. It's like magic.
+</div> -->
+
+
+<div class="video">
+<br><br>
+<p><strong>Video to the demonstration of my application!</strong></p>
 </div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ePbQvitwIGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
