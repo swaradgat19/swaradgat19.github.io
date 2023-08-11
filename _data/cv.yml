@@ -38,9 +38,10 @@
       institution: The Research Foundation for SUNY
       year: 2023 - Present
       description:
-        - Worked on WSInfer, a pipeline to run patch based classification models on images for tumor & lymphocyte detection
-        - Deployed project as an executable software, successfully addressing packaging intricacies involving multiple libraries 
-        - Proficient in leveraging Pytest to develop robust Python scripts for automated feature validation during deployment, ensuring seamless integration of new functionalities.
+        - Developed and deployed Python package ‘WSInfer’ designed for efficient tumor and lymphocyte detection
+        - Employed CI/CD pipelines for seamless code deployment, engineered robust Python scripts for feature testing
+        - Integrated WSInfer tool with QuPath using Python scripts to automate image analysis of whole slide images
+        - Received funding from National Institutes of Health (NIH) and various other State and National Grants
         # - title: Description 3.
         #   contents:
         #     - Sub-description 1.
