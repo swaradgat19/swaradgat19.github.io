@@ -50,9 +50,9 @@
       institution: Talentserve
       year: 2021
       description:
-        - Developed dashboards for seamless interaction between 100k+ students and 1000+ companies using Django
-        - Developed an AI-powered chatbot using Dialogflow to assist users of the company's website with FAQs
-        - Scraped 2500+ websites and 5k+ job descriptions using Python and filtered information to company portals
+        - Developed interactive social networking website to facilitate seamless exploration of information for a user base of 100,000+ students and 1,000+ companies using Django
+        - Implemented an AI-powered chatbot using Dialogflow, empowering users to obtain insights and answers to FAQs through an intuitive conversational interface, increasing user engagement by 20%
+        - Constructed the company database using MySQL, developed robust procedures and triggers to maintain integrity of database. Regularly deployed project ensuring smooth execution and availability for end-users.
 
 - title: Honors and Awards
   type: time_table
