@@ -34,7 +34,7 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Senior Research Aide
+    - title: Machine Learning Intern
       institution: The Research Foundation for SUNY
       year: 2023 - Present
       description:
@@ -58,13 +58,13 @@
   type: time_table
   contents:
     - year: 2019
-      items: 
+      items:
         - 2nd Prize in Times Technoxian'19
     - year: 2023
-      items: 
+      items:
         - Top 5 Projects in Operating Systems (CSE 506 Spring'23)
     - year: 2022
-      items: 
+      items:
         - Participated in All India Inter University Baseball (AIU) Tournament in 2022
         - Gold Medalist of Summit Baseball '22
 
@@ -72,7 +72,7 @@
   type: nested_list
   contents:
     - title: Programming Languages
-      items: 
+      items:
         - Python, Java, Javascript,Typescript, C, C++, SQL
         # - Description 2.
     - title: Frameworks and Libraries
@@ -80,17 +80,16 @@
         - Django, Flask, Plotly, Dash, d3.js, Tensorflow, Pytorch, Pinecone, NodeJS, ExpressJS, ReactJS
         # - Description 2.
     - title: Databases
-      items: 
-      - MySQL, IBM Db2, PostgreSQL, Redis, Oracle, Firebase
+      items:
+        - MySQL, IBM Db2, PostgreSQL, Redis, Oracle, Firebase
     - title: Tools
-      items: 
-       - Git, Github, Docker, Kubernetes, AWS, PyTest
-
+      items:
+        - Git, Github, Docker, Kubernetes, AWS, PyTest
 
 - title: Other Interests
   type: list
   contents:
-    - An ardent Liverpool FC fan 
+    - An ardent Liverpool FC fan
     - I love reading fiction. Some of my favourite works - <a href="https://www.goodreads.com/book/show/19063.The_Book_Thief" target="_blank">The Book Thief</a>, <a href="https://www.goodreads.com/book/show/2657.To_Kill_a_Mockingbird" target="_blank">To Kill a Mockingbird</a>.
       Currently Reading <a href ="https://www.goodreads.com/book/show/14836.Midnight_s_Children" target="_blank">Midnight's Children</a>. I'm also a huge fans of the works of JRR Tolkien (<a href = "https://www.goodreads.com/book/show/33.The_Lord_of_the_Rings">LOTR</a>, <a href="https://www.goodreads.com/book/show/5907.The_Hobbit">Hobbit</a>). Every winter, I re-read Lord of the Rings and get amazed by Gandalf's fight with the Balrog :)
     - From Jazz to Indie Pop, I love listening to all kinds of music. Check out my <a href="https://open.spotify.com/user/qkz2kmezqwwcnckqwtl76tluc?si=ec322ed5a28f4e9a">Spotify!</a>

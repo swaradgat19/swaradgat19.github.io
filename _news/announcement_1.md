@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started work as **Senior Research Aide** at the **Department of Biomedical Informatics**! :microscope:
+Started work as **Machine Learning Intern** at the **Department of Biomedical Informatics**! :microscope:
